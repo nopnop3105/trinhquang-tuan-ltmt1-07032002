@@ -1,0 +1,173 @@
+body {
+    margin: 0
+}
+.logo{
+    display: flex;
+    background-color: #bebdbd;
+}
+.list{
+    display: flex;
+}
+.list li {
+    list-style: none;
+}
+.list li a{
+    text-decoration: none;
+    color: #525252 ;
+    padding-left: 50px;
+
+}
+.list li a:hover{
+    text-decoration: none;
+    color: #DE1B41 ;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.wrapper {
+    margin: 0px auto;
+    width: 960px;
+    display: flex;
+}
+
+.wp-slider {
+    width: 400px;
+}
+
+.show-pictures {
+    height: 240px;
+    position: relative;
+}
+
+/* i{
+    align-items: center;
+    justify-content: center;
+} */
+.slider-nav div {
+    top: 0px;
+    position: absolute;
+    background: rgba(229, 229, 229,60%);
+    top: 50%;
+    width: 26px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+
+
+.right-btn {
+    right: 0px;
+    
+}
+.slider-nav div:hover{
+    background: rgba(155, 12, 12,60%);
+    color: rgba(208, 208, 208,60%);
+    transition: all 0.35s ease-in-out;
+    cursor: pointer;
+}
+
+ul.list-thumb {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+ul.list-thumb .thumb-item {
+    width: 80px;
+    border: 2px solid #c4c4c4;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+ul.list-thumb .thumb-item.active {
+    border: 2px solid #FB9393;
+    opacity: 100%;
+}
+.wp-buy-amount {
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+.int-product{
+   padding-left: 50px;
+}
+.buy-amount {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.buy-amount button {
+    width: 22px;
+    height: 22px;
+    outline: none;
+    background: none;
+    border: 1px solid rgba(10, 7, 10, 0.8);
+    cursor: pointer;
+}
+
+.buy-amount button:hover {
+    background-color: #ececec;
+}
+
+.buy-amount button svg {
+    color: #909090;
+}
+
+.buy-amount button:hover svg {
+    color: #4f4f4f;
+}
+
+.buy-amount #amount {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ececec;
+}
+.no-1{
+    color: #DE1B41;
+   font-size: 32px;
+   
+
+}
+.no-2{
+    color: #232323;
+    font-size: 60px;
+
+}
+.no-3{
+    color: #525252;
+    font-size: 24px;
+
+}
+.add-product{
+    padding-left: 50px;
+}
+.add-product p{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #DE1B41;
+    color: #ececec;
+}
+#backtop1 button{
+    width: 50px;
+    height: 50px;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50% ;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+}

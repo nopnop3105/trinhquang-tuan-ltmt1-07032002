@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+#header{
+    /* position: absolute; */
+}
+
+.weather {
+    margin-left: 20px;
+}
+
+.login {
+    margin-left: 10px;
+}
+
+.search {
+    margin-left: 10px;
+    
+}
+.main-menu{
+    padding-left: 0px;
+    background: white;
+    width: 100%;
+}
+.main-menu ul {
+    display: flex;
+}
+
+.main-menu li {
+    list-style: none;
+}
+
+.main-menu a {
+    font-size: 14px;
+    font-weight:500;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(93, 93, 93);
+    border-bottom: 1px solid rgb(232, 232, 232);
+}
+
+.main-menu a:hover {
+    border-bottom: 3px solid green;
+}
+.wp-content{
+    padding-bottom: 30px;
+    border-bottom:3px solid      rgb(198, 198, 198);
+    
+}
+.left-pic {
+    border-right: 1px solid rgb(198, 198, 198); 
+}
+.left-pic a:not(.act){
+    border-bottom:1px solid rgb(198, 198, 198) ;
+    display: block;
+    margin-bottom: 10px;
+}
+.left-pic img{
+width: 300px;
+}
+.page-2 {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.center-pic a{
+    display: block;
+}
+.center-pic img{
+    width: 600px;
+}
+
+.right-pic{
+    border-left: 1px solid rgb(198, 198, 198); ;
+}
+.right-pic a:not(.act){
+    padding-top: 30px;
+    display: block;
+    border-bottom:1px solid rgb(198, 198, 198); ;
+}
+.right-pic img{
+    width: 150px;
+    float: right;
+    padding: 10px;
+    
+}
+.sport{
+    border-right: 1px solid rgb(198, 198, 198);;
+}
+.sport img{
+    width: 300px;
+}
+.sport .title{
+    font-weight: bold ;
+    text-transform: uppercase;
+
+}
+.sport a:not(.act){
+    border-bottom:1px solid rgb(198, 198, 198); ;
+    display: block;
+    margin-bottom: 10px;
+}
+.sport .title span{
+    color: green;
+}
+.center-list{
+    border-right: 1px solid rgb(198, 198, 198);
+}
+.page-2 .center-list a {
+    display: flex;
+    float: left;  margin: 20px;
+}
+.page-2 .center-list a p{
+    margin-left: 10px;
+}
+.ads{
+ 
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.footer{
+    border-top: 3px solid green;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.footer img{
+    width: 100px;
+}
+@media(max-width:1200px){
+}

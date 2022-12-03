@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/eaad0e58c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="inf-product.css">
+    <title>Slider next prev Jquery</title>
+
+    <link rel="stylesheet" href="reset/reset.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="back-top.js" ></script>
+    <script src="slider.js"></script>
+    <script src="count.js"></script>
+
+
+</head>
+
+<body>
+    <div id="backtop1">
+        <button id="backtop">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75L12 3m0 0l3.75 3.75M12 3v18" />
+            </svg>
+        </button>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <p>LOGO </p>
+                <ul class="list">
+                    <li><a href="muasam.html">Our Service</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="wrapper pt-5">
+            <div class=" wp-slider">
+                <div class="show-pictures">
+                    <div><img src="image/picture-1.png" alt=""></div>
+                    <div class="slider-nav">
+                        <div class="left-btn">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="right-btn">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="list-thumb">
+                        <li class="thumb-item "><a><img src="image/picture-1.png" alt=""></a></li>
+                        <li class="thumb-item"><a><img src="image/picture-2.png" alt=""></a></li>
+                        <li class="thumb-item"><a><img src="image/picture-3.png" alt=""></a></li>
+                        <li class="thumb-item"><a><img src="image/picture-4.png" alt=""></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="wp-buy-amount pt-0">
+                <div class="int-product">
+                    <div class="no-2">POCKET COTTON</div>
+                    <div class="no-3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente accusamus eius
+                        temporibus non sunt quia qui sint quas neque illum.</div>
+                    <div class="no-1">300$</div>
+                </div>
+                <div class="buy-amount">
+                    <button class="minus-btn" onclick="handleMinus()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5}
+                            stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15" />
+                        </svg>
+
+                    </button>
+                    <input type="text" name="amount" id="amount">
+
+                    <button class="plus-btn" onclick="handlePlus()">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+
+                    </button>
+                </div>
+                <div class="add-product">
+                    <p>Add </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="wp-desciption ">
+                <div class="no-1">Desciption</div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-5">
+                    <div class="no-2">Pocket cotton</div>
+                    <div class="no-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate totam delectus
+                        debitis labore, eos laborum soluta in pariatur impedit. Ipsam, deleniti minima est magnam
+                        molestias
+                        assumenda ab sunt soluta consequatur!</div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <img src="image/clothes5-pic.png" alt="">
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-5">
+                    <img src="image/clothes4-pic.png" alt="">
+                </div>
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <div class="no-2">Pocket cotton</div>
+                    <div class="no-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate totam delectus
+                        debitis labore, eos laborum soluta in pariatur impedit. Ipsam, deleniti minima est magnam
+                        molestias
+                        assumenda ab sunt soluta consequatur!</div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-2"></div>
+                <div class="col-3"> <img src="image/tell-us.png" alt="">
+                    <div class="no-2">Tell us</div>
+                    <div class="no-3">
+                        8905656778 <br>
+                        8905656778</div>
+                </div>
+                <div class="col-3"> <img src="image/tell-us.png" alt="">
+                    <div class="no-2">Drop Mail
+                    </div>
+                    <div class="no-3">
+                        abc@gmail.com <br>
+                        def@gmail.com</div>
+                </div>
+                <div class="col-3"> <img src="image/tell-us.png" alt="">
+                    <div class="no-2"> Location
+                    </div>
+                    <div class="no-3">
+                        B-531, Nalbanda Street, Hazuri Rd, Ludhiana, Punjab 141008</div>
+                </div>
+
+
+            </div>
+        </div>
+        <br><br><br>
+        <script>
+            let amountElement = document.getElementById('amount');
+            let amount = amountElement.value;
+            // console.log(amountElement);
+            let render = (amount) => {
+                amountElement.value = amount
+            }
+            let handlePlus = () => {
+                console.log(amount);
+                amount++
+                render(amount)
+            }
+            let handleMinus = () => {
+                if (amount > 1)
+                    amount--;
+                render(amount);
+            }
+            amountElement.addEventListener('input', () => {
+                amount = amountElement.value;
+                amount = parseInt(amount)
+                amount = isNaN(amount) ? 1 : amount
+                render(amount)
+                console.log(amount)
+            })
+
+        </script>
+</body>
+
+</html>
